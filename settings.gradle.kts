@@ -1,13 +1,11 @@
 pluginManagement {
     plugins {
-        fun String.v() = extra["$this.version"].toString()
-        kotlin("js") version "kotlin".v()
+        kotlin("js") version "1.4.0-rc"
     }
 }
 
 rootProject.name = "myproject"
 
 include(
-    "app",
-    "nodejs"
+    "app"
 )
